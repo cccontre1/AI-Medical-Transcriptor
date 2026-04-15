@@ -61,32 +61,37 @@ Para procesar audio, este proyecto requiere **FFmpeg** instalado a nivel de sist
 
 ---
 
+---
+
 ## 🚀 Instalación y Uso
 
 1. **Clonar el repositorio:**
    ```bash
    git clone [https://github.com/cccontre1/AI-Medical-Transcriptor.git](https://github.com/cccontre1/AI-Medical-Transcriptor.git)
    cd AI-Medical-Transcriptor
-Configurar el entorno virtual:
+   ```
 
-Bash
-￼
-python3 -m venv venv
+2. **Configurar el entorno virtual:**
+   ```bash
+   python3 -m venv venv
+   ```
 
-# Activar en Linux/Mac:
-source venv/bin/activate
-
-# Activar en Windows:
-venv\\Scripts\\activate
-Instalar dependencias:
-
-Bash
-￼
-pip install --upgrade pip
-pip install -r requirements.txt 
-Ejecutar la aplicación:
-
-Bash
-￼
-streamlit run app.py
-"""
+3. **Activar el entorno virtual:**
+   - **En Linux/Mac:**
+     ```bash
+     source venv/bin/activate
+     ```
+   - **En Windows:**
+     ```bash
+     venv\Scripts\activate
+     ```
+   
+4. **Instalar dependencias:**
+   ```bash
+   pip install --upgrade pip
+   pip install -r requirements.txt 
+   ```
+  
+5. **Ejecutar la aplicación:**
+   ```bash
+   streamlit run app.py
