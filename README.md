@@ -60,7 +60,7 @@ Para procesar audio, este proyecto requiere **FFmpeg** instalado en el sistema:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/AI-Medical-Transcriptor.git](https://github.com/tu-usuario/AI-Medical-Transcriptor.git)
+   git clone https://github.com/tu-usuario/AI-Medical-Transcriptor.git
    cd AI-Medical-Transcriptor
 
 
