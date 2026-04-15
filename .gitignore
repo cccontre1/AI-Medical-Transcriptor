@@ -16,3 +16,5 @@ audios/
 __pycache__/
 *.pyc
 .streamlit/config.toml (si tiene credenciales)
+
+repositorio_audios/

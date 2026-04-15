@@ -108,3 +108,5 @@ wheel==0.46.1
 wsproto==1.2.0
 xdg==5
 zopfli==0.2.3.post1
+levenshtein
+streamlit
