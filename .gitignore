@@ -1,0 +1,18 @@
+# Entorno virtual
+venv/
+.env
+
+# Base de datos (No queremos subir datos locales)
+*.db
+*.sqlite3
+
+# Archivos de audio y PDFs generados
+audios/
+*.wav
+*.mp3
+*.pdf
+
+# Python junk
+__pycache__/
+*.pyc
+.streamlit/config.toml (si tiene credenciales)

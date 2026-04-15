@@ -1,0 +1,15 @@
+[theme]
+# Color principal (Botones, barras de progreso) - Un azul quirúrgico
+primaryColor = "#2E5A88"
+
+# Fondo de la aplicación - Blanco limpio
+backgroundColor = "#FFFFFF"
+
+# Fondo de la barra lateral y tarjetas - Tono "Rain" (Azul-Gris suave)
+secondaryBackgroundColor = "#F0F4F8"
+
+# Color del texto - Gris oscuro profesional
+textColor = "#1F2937"
+
+# Fuente
+font = "sans serif"
