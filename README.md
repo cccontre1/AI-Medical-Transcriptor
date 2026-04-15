@@ -1,4 +1,9 @@
-# 🏥 AI-Medical Transcriptor: Gestión Digital de Informes Médicos
+Python
+￼
+from IPython.display import display, Markdown
+
+# Contenido del archivo README.md basado en la versión refinada previa
+readme_content = """# 🏥 AI-Medical Transcriptor: Gestión Digital de Informes Médicos
 
 ### 🚀 Automatización y Trazabilidad de Reportes Clínicos con IA
 
@@ -10,7 +15,7 @@ Este proyecto surge para optimizar el flujo de creación de informes médicos me
 La aplicación ofrece un entorno seguro para que los profesionales de la salud carguen o graben dictados técnicos. El sistema integra un flujo de trabajo de tres etapas (**Carga -> Edición -> Validación**) que garantiza que cada informe emitido cuente con supervisión humana y respaldo digital.
 
 **Funcionalidades Clave:**
-* **Captura Multicanal:** Grabación directa desde el navegador (micrófono) o carga de archivos de audio (WAV, MP3, OGG).
+* **Captura Multicanal:** Grabación directa desde el navegador (micrófono nativo) o carga de archivos de audio (WAV, MP3, OGG).
 * **Identificación Unívoca:** Registro asociado a Nombre de Paciente e ID de Examen/Ficha para asegurar la trazabilidad.
 * **Flujo de Calidad:** Herramienta de edición profesional en paralelo (Original vs. Editado) con cálculo automático de "Grado de Edición".
 * **Exportación Formal:** Generación automática de reportes en PDF con formato clínico oficial.
@@ -29,11 +34,11 @@ Este proyecto no ha sido desarrollado por un ingeniero de software tradicional, 
 
 ## 🛠️ Stack Tecnológico
 - **Lenguaje:** Python 3.13
-- **Interfaz:** [Streamlit](https://streamlit.io/)
+- **Interfaz:** [Streamlit](https://streamlit.io/) (con `streamlit-mic-recorder` para captura de audio web).
 - **IA/ML:** OpenAI Whisper `large-v3-turbo` (Procesamiento local de alta velocidad).
-- **Base de Datos:** SQLite3 (Persistencia de datos y logs de auditoría).
-- **Documentación:** fpdf2 (Motor de renderizado de PDFs).
-- **Infraestructura:** Optimizado para hardware con GPU dedicada y 64GB de RAM.
+- **Base de Datos & Análisis:** SQLite3 y Pandas (Persistencia de datos y DataFrames para logs de auditoría).
+- **Documentación:** fpdf2 (Motor de renderizado de PDFs nativo).
+- **Infraestructura:** Optimizado para hardware con GPU dedicada y 64GB de RAM, con dependencias abstractas para compatibilidad multiplataforma.
 
 ---
 
@@ -48,7 +53,7 @@ Este proyecto no ha sido desarrollado por un ingeniero de software tradicional, 
 
 ## ⚙️ Requisitos del Sistema (Multiplataforma)
 
-Para procesar audio, este proyecto requiere **FFmpeg** instalado en el sistema:
+Para procesar audio, este proyecto requiere **FFmpeg** instalado a nivel de sistema operativo:
 
 * **Linux:** `sudo apt install ffmpeg`
 * **Mac:** `brew install ffmpeg`
@@ -60,27 +65,28 @@ Para procesar audio, este proyecto requiere **FFmpeg** instalado en el sistema:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/AI-Medical-Transcriptor.git
+   git clone [https://github.com/cccontre1/AI-Medical-Transcriptor.git](https://github.com/cccontre1/AI-Medical-Transcriptor.git)
    cd AI-Medical-Transcriptor
+Configurar el entorno virtual:
 
+Bash
+￼
+python3 -m venv venv
 
-2. **Configurar el entorno virtual:**
-   ```bash
-   python -m venv venv
+# Activar en Linux/Mac:
+source venv/bin/activate
 
-   # Activar en Linux/Mac:
-   source venv/bin/activate
+# Activar en Windows:
+venv\\Scripts\\activate
+Instalar dependencias:
 
-   # Activar en Windows:
-   venv\Scripts\activate
-   
-3. **Instalar dependencias:**
-   ```bash
-  	pip install -r requirements.txt 
-  
-4. **Ejecutar:**
-	streamlit run app.py
+Bash
+￼
+pip install --upgrade pip
+pip install -r requirements.txt 
+Ejecutar la aplicación:
 
-
-
-  
+Bash
+￼
+streamlit run app.py
+"""
